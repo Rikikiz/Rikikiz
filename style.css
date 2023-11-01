@@ -63,10 +63,14 @@ h1
 {
 	color: black;
 	background-color: #ff0000;
+	cursor: pointer;
 	font-size: 25px;
 	font-weight: 800;
 	padding: 10px 20px 10px 20px;
 	border-radius: 15px;
+	-webkit-user-select: none; /* Safari */
+  	-ms-user-select: none; /* IE 10 and IE 11 */
+  	user-select: none; /* Standard syntax */
 }
 
 .download:hover
