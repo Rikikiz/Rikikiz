@@ -8,7 +8,9 @@
 {
 	margin: 0;
 	padding: 0;
-
+	text-decoration: none;
+	list-style: none;
+	font-family: "Comic Sans MS";
 }
 
 body
@@ -26,17 +28,23 @@ body
 	justify-content: center;
 }
 
+.boxcontainer
+{
+	display: flex;
+	justify-content: center;
+}
+
 .boxes
 {
 	display: grid;
-	grid-template-rows: 300px 300px ;
+	grid-row: 300px 300px;
 	grid-template-columns: 300px 300px 300px 300px;
 	justify-items: start;
 	align-items: end;
 
 }
 
-.item1
+.item
 {
 	justify-self: center;
 	align-self: stretch;
@@ -46,9 +54,30 @@ h1
 {
 	color: var(--clr-bg);
 	font-size: 96px;
-	font-family: "Comic Sans MS";
 	-webkit-user-select: none; /* Safari */
   	-ms-user-select: none; /* IE 10 and IE 11 */
   	user-select: none; /* Standard syntax */
 }
 
+.download
+{
+	color: black;
+	background-color: #ff0000;
+	font-size: 25px;
+	font-weight: 800;
+	padding: 10px 20px 10px 20px;
+	border-radius: 15px;
+}
+
+.download:hover
+{
+	color: var(--clr-bg);
+	background-color: #ff0000;
+	padding: 10px 20px 10px 20px;
+	border-radius: 15px;
+}
+
+.divider
+{
+	margin-top: 200px;
+}
